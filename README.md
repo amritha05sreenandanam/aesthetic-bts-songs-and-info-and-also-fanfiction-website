@@ -33,9 +33,10 @@ This is a **fan-made project**. It is NOT affiliated with, endorsed by, or conne
 
 ## License
 
-**Copyright (c) 2025 purple moon. All Rights Reserved.**
+**Copyright (c) 2025 amritha05sreenandanam. All Rights Reserved.**
 
 This project is proprietary and confidential. Unauthorized copying, distribution, or use of the code and design is strictly prohibited.
 
 ---
-*Created by purple moon* 💜
+*Created by amritha0sreenandanam* 💜
+
