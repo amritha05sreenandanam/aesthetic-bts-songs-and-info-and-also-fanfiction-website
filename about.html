@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - BTS Universe</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .about-container {
+            background: var(--glass-bg);
+            border-radius: var(--border-radius);
+            padding: 3rem;
+            margin-top: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about-section {
+            margin-bottom: 3rem;
+        }
+
+        .about-section h2 {
+            font-family: var(--font-heading);
+            color: var(--acc-purple);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--acc-lilac);
+            display: inline-block;
+        }
+
+        .about-section p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: var(--text-brown);
+            margin-bottom: 1rem;
+        }
+
+        .nav-link-btn {
+            background: var(--white);
+            color: var(--acc-purple);
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid var(--acc-lilac);
+            transition: all 0.3s;
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .nav-link-btn:hover {
+            background: var(--acc-purple);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header functional-update="pending">
+        <div class="logo-container">
+            <h1>Bangtan Universe <span class="heart">♥</span></h1>
+            <p class="subtitle">Forever Bulletproof</p>
+        </div>
+        <nav style="margin-top: 1rem; text-align: center;">
+            <a href="index.html" class="nav-link-btn"><i class="fas fa-home"></i> Home</a>
+            <a href="songs.html" class="nav-link-btn"><i class="fas fa-music"></i> Discography</a>
+            <a href="about.html" class="nav-link-btn active" style="background:var(--acc-purple); color:white;"><i
+                    class="fas fa-info-circle"></i> About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-container">
+            <div class="about-section">
+                <h2>The Project</h2>
+                <p>
+                    Welcome to <strong>BTS Universe</strong>, a space curated with love for ARMY.
+                    This project was born out of a desire to create a beautiful, calming, and aesthetic corner of the
+                    internet
+                    where fans can celebrate the seven members of BTS.
+                </p>
+                <p>
+                    Whether you are here to admire the members, listen to their healing discography, or get lost in a
+                    fan fiction
+                    story, this universe is for you. Everything from the "Borahaefication" of the colors to the
+                    micro-interactions
+                    is designed to bring a smile to your face.
+                </p>
+            </div>
+
+            <div class="about-section">
+                <h2>The Creator</h2>
+                <p>
+                    Hi! I'm <strong>purple moon</strong>, the developer behind this project.
+                    As a passionate ARMY, I wanted to combine my coding skills with my love for Bangtan.
+                </p>
+                <p>
+                    <em>"Teamwork makes the dream work."</em>
+                </p>
+            </div>
+
+            <div class="about-section">
+                <h2>Features</h2>
+                <ul class="song-list">
+                    <li class="song-item">
+                        <span><i class="fas fa-star" style="color:var(--acc-purple)"></i> Responsive Design</span>
+                    </li>
+                    <li class="song-item">
+                        <span><i class="fas fa-music" style="color:var(--acc-purple)"></i> Curated Music Player</span>
+                    </li>
+                    <li class="song-item">
+                        <span><i class="fas fa-book-open" style="color:var(--acc-purple)"></i> Immersive Reading
+                            Mode</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Disclaimer: This is a fan-made project. Not official.</p>
+        <p>&copy; 2025 BTS Universe. <strong>All Rights Reserved.</strong></p>
+        <p>Created by: purple moon 💜</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Reusing script for particles if applicable, or can keep empty -->
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discography - BTS Universe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .discography-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .album-section {
+            background: var(--glass-bg);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+
+        .album-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--acc-lilac);
+            padding-bottom: 1rem;
+        }
+
+        .album-cover {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            background: var(--acc-purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        .album-title h2 {
+            font-family: var(--font-heading);
+            color: var(--acc-purple);
+            font-size: 2rem;
+        }
+
+        .album-meta {
+            color: var(--light-brown);
+            font-size: 0.9rem;
+        }
+
+        .nav-link-btn {
+            background: var(--white);
+            color: var(--acc-purple);
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid var(--acc-lilac);
+            transition: all 0.3s;
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .nav-link-btn.active {
+            background: var(--acc-purple);
+            color: var(--white);
+        }
+
+        .nav-link-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <h1>Bangtan Universe <span class="heart">♥</span></h1>
+            <p class="subtitle">Forever Bulletproof</p>
+        </div>
+        <nav style="margin-top: 1rem; text-align: center;">
+            <a href="index.html" class="nav-link-btn"><i class="fas fa-home"></i> Home</a>
+            <a href="songs.html" class="nav-link-btn active"><i class="fas fa-music"></i> Discography</a>
+            <a href="about.html" class="nav-link-btn"><i class="fas fa-info-circle"></i> About</a>
+        </nav>
+    </header>
+
+    <main class="discography-container">
+
+        <!-- Album: Golden -->
+        <div class="album-section">
+            <div class="album-header">
+                <div class="album-cover" style="background:#0000FF;"><i class="fas fa-compact-disc"></i></div>
+                <div class="album-title">
+                    <h2>Golden</h2>
+                    <p class="album-meta">Jungkook • 2023</p>
+                </div>
+            </div>
+            <ul class="song-list">
+                <li class="song-item" onclick="playVideo('B20CAwUffy4', 'Standing Next to You', 'Golden')">
+                    <span><i class="fas fa-play-circle"></i> Standing Next to You</span>
+                </li>
+                <li class="song-item" onclick="playVideo('QU9c0053UAU', 'Seven', 'Golden')">
+                    <span><i class="fas fa-play-circle"></i> Seven</span>
+                </li>
+                <li class="song-item" onclick="playVideo('mHN15XU7h7E', '3D', 'Golden')">
+                    <span><i class="fas fa-play-circle"></i> 3D</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: FACE -->
+        <div class="album-section">
+            <div class="album-header">
+                <div class="album-cover" style="background:#FFD700;"><i class="fas fa-compact-disc"></i></div>
+                <div class="album-title">
+                    <h2>FACE</h2>
+                    <p class="album-meta">Jimin • 2023</p>
+                </div>
+            </div>
+            <ul class="song-list">
+                <li class="song-item" onclick="playVideo('0Wwni_gSiy0', 'Like Crazy', 'FACE')">
+                    <span><i class="fas fa-play-circle"></i> Like Crazy</span>
+                </li>
+                <li class="song-item" onclick="playVideo('UaywgAqc1JY', 'Set Me Free Pt.2', 'FACE')">
+                    <span><i class="fas fa-play-circle"></i> Set Me Free Pt.2</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: D-DAY -->
+        <div class="album-section">
+            <div class="album-header">
+                <div class="album-cover" style="background:#000;"><i class="fas fa-compact-disc"></i></div>
+                <div class="album-title">
+                    <h2>D-DAY</h2>
+                    <p class="album-meta">Agust D (SUGA) • 2023</p>
+                </div>
+            </div>
+            <ul class="song-list">
+                <li class="song-item" onclick="playVideo('P4e_r1gC5k4', 'Haegeum', 'D-DAY')">
+                    <span><i class="fas fa-play-circle"></i> Haegeum</span>
+                </li>
+                <li class="song-item" onclick="playVideo('qGjAWJ2zWWI', 'Daechwita', 'D-2')">
+                    <span><i class="fas fa-play-circle"></i> Daechwita (D-2)</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Album: Layover -->
+        <div class="album-section">
+            <div class="album-header">
+                <div class="album-cover" style="background:#008000;"><i class="fas fa-compact-disc"></i></div>
+                <div class="album-title">
+                    <h2>Layover</h2>
+                    <p class="album-meta">V • 2023</p>
+                </div>
+            </div>
+            <ul class="song-list">
+                <li class="song-item" onclick="playVideo('h3M5k5Jb0QI', 'Slow Dancing', 'Layover')">
+                    <span><i class="fas fa-play-circle"></i> Slow Dancing</span>
+                </li>
+                <li class="song-item" onclick="playVideo('6WgTZ8H7O74', 'Love Me Again', 'Layover')">
+                    <span><i class="fas fa-play-circle"></i> Love Me Again</span>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <!-- Video Player Overlay (Reused) -->
+    <div id="videoOverlay" class="overlay hidden">
+        <div class="player-container">
+            <button id="closePlayer" class="close-btn-overlay">×</button>
+            <div class="video-wrapper">
+                <iframe id="mainPlayer" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h3 id="playingTitle">Song Title</h3>
+                <p id="playingDesc">Description...</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 BTS Universe. <strong>All Rights Reserved.</strong></p>
+    </footer>
+
+    <script>
+        // Mini Player Logic
+        const videoOverlay = document.getElementById('videoOverlay');
+        const mainPlayer = document.getElementById('mainPlayer');
+        const closePlayer = document.getElementById('closePlayer');
+        const playingTitle = document.getElementById('playingTitle');
+        const playingDesc = document.getElementById('playingDesc');
+
+        window.playVideo = function (videoId, title, desc) {
+            mainPlayer.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&modestbranding=1&rel=0&enablejsapi=1`;
+            playingTitle.innerText = title;
+            playingDesc.innerHTML = `${desc} <br> <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank" style="color:#9370DB"><i class="fas fa-external-link-alt"></i> Watch on YT</a>`;
+            videoOverlay.classList.remove('hidden');
+        };
+
+        closePlayer.addEventListener('click', () => {
+            videoOverlay.classList.add('hidden');
+            mainPlayer.src = '';
+        });
+    </script>
+</body>
+
+</html>
